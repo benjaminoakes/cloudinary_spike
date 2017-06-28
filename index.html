@@ -59,7 +59,7 @@
     <li>You can send Client Hints to help load the correct images.  See <code>Accept-CH</code>.</li>
     <li>There are Rails helpers for the above. See <code>cl_image_tag</code>.  Example: <code>cl_image_tag(the_image, width: :auto, height: 50, gravity: :auto, quality: :auto, client_hints: true, crop: "fill")</code>.</li>
     <li>DPR auto seems to need styles for width and height on high-DPI devices</li>
-    <li>Changing the viewport size only loads images if it became <em>bigger</em>.  If it becomes smaller, it will use the big images that were already loaded.  (Needs styling that this page doesn't have.)</li>
+    <li>Changing the viewport size only loads images if it became <em>bigger</em>.  If it becomes smaller, it will use the big images that were already loaded.  (Needs styling that this page doesn't have.)  <strong>This means you'll have to refresh to see the smaller images if you make the window smaller.</strong></li>
     <li>You can set automatic "breakpoints" (image size increments, not related to a debugger breakpoint), but the default is every 100px.</li>
   </ul>
 
